@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- link the stylesheet to the html -->
+    <link rel="stylesheet" href="./style1.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap" rel="stylesheet">
+    
+
+    <!-- font awesome cdn copy to the header  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- to have icon (favorite icon) link rel type href -->
+    <!-- background illathe image edukunnatha ann anallath than cannot by awesome fonts -->
+    <link rel="icon" type="image/x-icon" href=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6mVdFXuRWRsTs3Qfk_2Cglu9A23Vtg8E4SsLC-VHD4CmMLdwT4rNn_kZYxNNPjcI6_l0&usqp=CAU>
+</head>
+<body>
+
+    <div class="container" id="container">
+        <nav class="navbar">
+            <!-- logo image here image is given a clas name to resize the image size in css -->
+            <img class="logo"   src="./images/a-business-woman-who-explains-drawings_csp12051090.jpg" alt="">
+            
+            <!-- list -->
+            <ul>
+               <li class="linkitems"><a class="links" href="#home">HOME</a></li>
+               <li class="linkitems"><a class="links" href="#about">ABOUT</a></li>
+               <li class="linkitems"><a class="links" href="#skills">SKILL</a></li>
+               <li class="linkitems"><a class="links" href="contact">CONTACT</a></li>
+               <!-- ALWAYS MAKE SURE THAT ID SAME AS HREF -->
+               <!-- ALWAYS MAKE SURE THAT 1st div class in section should he heading -->
+            </ul>
+        </nav>
+        <!-- home -->
+        <section id="home">
+            <!-- content -->
+            <div class="title">
+                <h1 class="title_h1">I'm Biyanka <span id="lastname">Mani</span></h1>
+                <p class="title_p">This is my offical portfolio website to describe all.
+                    <br>
+                    Detailed and work experience in Web Development.
+                </p>
+                <a  class="download"  href="https://drive.google.com/file/d/1hl86Np1WcC0sJEzCFQLBXCCiCbTQ405t/view?usp=sharing" target="blank">DOWNLOAD CV</a>
+            </div>
+            <!-- image -->
+            <div class="images">
+                    <img id ="shape"  src="./images/shape.png" alt="shape">
+                    <img id="girl"    src="./images/girl.png">
+            </div>
+        </section>
+        <!-- about -->
+        <section id="about">
+            <div class="heading">
+                <h2>About Me</h2>
+                <span>Introduction</span><!-- <p> tag hav also here same -->
+            </div>
+            <div class="about_content">
+                <!-- images -->
+                <div class="about_img">
+                    <img src="./images/about.avif" alt="img">
+                </div>
+                <!-- content -->
+                <div class="about_details">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sit, odit dolores nemo deleniti corrupti. Facere, nemo illo, fugit quos consequatur accusantium minima tempore inventore, at quasi repudiandae? Officia, excepturi!
+                    </p>
+                    <div class="informations">
+                        <div class="info_box">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Biyanka Mani</span><!-- span is used for inline to get instead of using p tag -->
+                        </div>
+                        <div class="info_box">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>9495005679</span>
+                        </div>
+                        <div class="info_box">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>biyankamani0001@gmail.com</span>
+                        </div>
+                        <div class="info_box">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Biyanka Mani</span>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+                
+            </div>
+            <!-- 26/07/23 -->
+        </section>
+        <!-- skills -->
+        <section id="skills">
+            <div class="heading">
+                <h2>Skills</h2>
+                <span>My Skills</span>
+            </div>
+            <div class="skill_container">
+                <!-- progess bar section -->
+                <div class="progressbar_section">
+                    
+                    <div class="bar_container">
+                        <h3>HTML</h3>
+                        <span>95%</span>
+                        <div class="base_bar"></div>
+                        <!-- nammuku adthyam 2nd div classinnu same name thanne ayyirun but we name changed after to base_bar html-bar sothat aduthyam common ayyittu koduth property of base bar in css we need to get as well  we need also to adjust the width of yellow colour seperately so changed name ashtml-bar also added then it is styled seperately -->
+                        <div class="base_bar html-bar"></div>
+                    </div>
+                    <div class="bar_container">
+                        <h3>CSS</h3>
+                        <span>88%</span>
+                        <div class="base_bar" ></div>
+                        <div class="base_bar css-bar"></div>
+                    </div>
+                    <div class="bar_container">
+                        <h3>JS</h3>
+                        <span>89%</span>
+                        <div class="base_bar"></div>
+                        <div class="base_bar js-bar"></div>
+                    </div>
+                    <div class="bar_container">
+                        <h3>React</h3>
+                        <span>85%</span>
+                        <div class="base_bar"></div>
+                        <div class="base_bar react-bar"></div>
+                    </div>
+                    
+                </div>
+                <!-- image section -->
+                <div class="image_girl">
+                    <img src="./images/skills.webp" alt="img">
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="heading">
+                <h2>Contact</h2>
+                <span>My Contact</span><!-- <p> tag hav also here same -->
+            </div>
+            <div class="icon-set">
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/biyanka-mani-48b796228/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="icon">
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="icon">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="https://wa.me/qr/OZDWDR5MPI26F1"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="icon">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="icon">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <!-- &copy; for copyright symbol -->
+            <!-- &reg for reserved symbol -->
+            <p style="text-align: center;font-weight: bold;">&copy; My portfolio design 2023, All Rights Reserved &reg; Biyanka Mani</p>
+            <div class="uparrow">
+                <!-- container must be given in id else it cannot be navigated in class -->
+                <a href="#container"><i class="fa-solid fa-arrow-up fa-2x"></i></a>
+            </div>
+        </footer>
+
+    </div>
+
+
+</body>
+</html>

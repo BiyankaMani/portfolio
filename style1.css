@@ -1,0 +1,265 @@
+/* clss name should not have spaces */
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container{
+    width:100%;
+    height:100vh;/* view port height  1vh=19.2px px basic unit*/
+    background-color: white;/* 6f white */
+    position: relative;
+}
+.navbar{
+    display: flex;/* to display the conntent prestb in the navbar to move right after the image */
+    justify-content: space-between;/* space width incresce */
+    margin-left:100px;
+    align-items:center;
+    width:85%;
+
+
+}
+.logo{
+width:130px/* size reduce */
+}
+
+/* display inline box property--vertical list to horizontal list */
+.linkitems{
+    display:inline-block;
+    margin: 10px 20px;
+}
+.links{
+    text-decoration: none;/* to remove underline */
+    font-weight:bold;/* to make bold */
+    color:black;
+}
+/* different type clasess-pseudo class--hover,visited */
+/* pseudo class -- event nadaukumbo, mathram an action doing*/
+
+/* syntax --- selector:pseudo-class{property:value;} */
+.links:hover{
+    color: red;
+}
+.title{
+    margin-top: 13%;
+    margin-left:8%;
+}
+.title_h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.title_p{
+    font-size: 18px;
+}
+#lastname{
+    color:rgb(255, 153, 0);
+}
+.download{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;/* underline remove */
+    font-weight: bold;
+    border-radius: 5px;/* curverature */
+    display:inline-block;
+    margin-top: 30px;
+
+}
+/* 25/07/23 */
+.images{
+    position: absolute;
+    width:45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+}
+/* YOU HAVE TO SEE THROUGHLY CLASSES TUE WED THU FRI selectors-descent selectors card cheythapol use cheythattund*/
+.images img{
+    position: absolute;
+    height: 100%;
+    left:50%;
+    bottom: 0px;
+    /* to remove dragging of websites in right side */
+    transform:translateX(-50%);
+    /* to make transition smoother */
+    transition:bottom 1s,left 2s;
+}
+/*shape 'bottom 0 px to 70 px' */
+.images:hover #shape{
+    bottom:70px;
+}
+/* girl shape moved to 40percentage */
+.images:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 13% 8% 0px 8%;/* to move all section we can see every thing start in same line of above */
+}
+/* THIS IS COMMON FOR ABOUT,SKILL AND CONTACT */
+/* SO SHOULD BE DIV CLASS NAME SHOULD BE SAME AS heading */
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size:30px ;
+}
+.heading span{
+    font-size:20px ;
+    color: green;
+}
+/* display flex --side by side */
+/* display grid can be also used for the same */
+.about_content{
+    display: grid;/* grid cannot be given just by this mention colums each */
+    grid-template-columns: repeat(2,1fr);/* 2 grid each of 1 frame that is 255 pixels  1fr=255pixel*/
+    gap: 2rem;/* space between 2 columns */
+    /* 1rem=16px */
+    margin-top:2rem;
+}
+.about_img img{
+    width:80%;
+    border-radius: 1rem;
+}
+.about_details {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;/* justification of para */
+}
+.informations{
+    margin-top: 2rem;/* onn errangan vendi */
+}
+.info_box{
+    margin-bottom: 1rem;
+    display: flex;/* ? D */
+}
+.info_box span{
+    margin-left: 1rem;
+}
+/* smooth behavior not fast transictions */
+/* 26/07/23 */
+html{
+    scroll-behavior: smooth;
+}
+#skills{
+    margin:13% 8% 0px 8%;
+}
+.skill_container
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.image_girl img{
+    width:85% ;
+    padding-left: 4rem;
+}
+.bar_container{
+    display: flex;
+    justify-content: space-between;/* to have space between them */
+    align-items: center;
+    padding: 1rem 0px;/* korach errakkan vendiya */
+    margin-bottom: 1rem;
+    position: relative;/* bar_container is the parent class parent position fixed akkunnu to get that */
+/* progress bar is kept one above another so that it should be relative so for that parent should be relative */
+}
+.base_bar{
+    width:100%;/* full of base conatiner */
+    height:0.5rem;
+    background-color: black;
+    /* here actually consist of 2 divs in them */
+    /* when a div is styled and given width and backgroung colour it is visible  */
+    border-radius: 5rem;
+    position: absolute;/* child class */
+    /* everything comes one above another once absolute given*/
+    bottom:0px ;
+    /* one above another vannath remove cheyyan vendi ann  */
+    left: 0px;
+}
+.html-bar{
+    width: 95%;
+    background-color: #ffa500;
+}
+.css-bar{
+    width: 88%;
+    background-color: #ffa500;
+}
+.js-bar{
+    width: 89%;
+    background-color: #ffa500;
+}
+.react-bar{
+    width: 85%;
+    background-color: #ffa500;
+}
+#contact{
+    margin:13% 8% 0px 8%;
+}
+.icon-set{
+    display: flex;/* inlineill varrn */
+    justify-content: center;/* justify centre */
+    align-items: center;/* to align at centre */
+    margin-top: 3%;/* thazzekku errangi varran */
+}
+.icon,.uparrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;/* icon round akkan */
+    /* need width=height then place border radius place as 50% then circle will be obtained */
+    /* border: 1px solid */;/* it will be commented that it shows only that circle how it looks */
+    /* to make icons to the exact centeres of that div both horizontal and vertical  thazzathe 3 properties must be used as it is*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin is used for outside of the div */
+    /* while padding is used within div(icon) or that circle */
+    /* to have space between icons margin is used 0px top and bottom and 10px at left and right */
+    margin: 0px 10px;
+
+}
+.icon i{
+    font-size: 30px;
+    color:black ;
+}
+/* linear gradientcolour is used here so the propetty is background image--->linear gradient
+then mention about  where to where colour change occur 2nd colour will be 1st from given position*/
+.icon:hover{
+    background-image: linear-gradient(to bottom right, yellow, red);
+}
+/* when icon is hovered colour of icon is white */
+.icon:hover i{
+    color: white;
+    /* animation ,animationnur oru name , time needed*/
+    animation:shake 0.75s;
+}
+/* keyframes then name of annimation
+then each percentage of time what to do in ,
+then apply the property of what to do like transform rotate in one direction and reverse rotate in opposite */
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    30%
+    {
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    70%
+    {
+        transform: rotate(-15deg);
+    }
+}
+footer{
+    margin:3rem 0px;
+}
+/* uparrow class shares the same property of icons so comma class name */
+.uparrow{
+    float: right;
+    background-image: linear-gradient(to bottom right, yellow, red);
+    margin: 0px 10px 50px 0px;
+}
+.uparrow:hover i{
+    color: white;
+}
